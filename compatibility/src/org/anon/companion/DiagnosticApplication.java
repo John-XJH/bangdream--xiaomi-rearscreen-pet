@@ -1,0 +1,4 @@
+package org.anon.companion;
+public class DiagnosticApplication extends android.app.Application {
+ @Override public void onCreate(){super.onCreate();if(!android.app.Application.getProcessName().equals(getPackageName()))return;Thread.UncaughtExceptionHandler previous=Thread.getDefaultUncaughtExceptionHandler();Thread.setDefaultUncaughtExceptionHandler((thread,error)->{try{org.json.JSONObject d=new org.json.JSONObject().put("error",error.getClass().getName());StringBuilder trace=new StringBuilder();for(StackTraceElement f:error.getStackTrace()){if(trace.length()>1500)break;trace.append(f.toString()).append('\n');}d.put("stage",trace.toString());Diagnostics.event(this,"helper","uncaught_exception",d);}catch(Exception ignored){}if(previous!=null)previous.uncaughtException(thread,error);else android.os.Process.killProcess(android.os.Process.myPid());});}
+}

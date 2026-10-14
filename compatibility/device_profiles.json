@@ -1,0 +1,6 @@
+[
+  {"id":"17-pro","name":"小米 17 Pro","width":904,"height":572,"modelIds":[],"deviceTested":false,"cameraReserve":0.35,"source":"用户提供的预适配目标；镜头孔位待实测"},
+  {"id":"17-pro-max","name":"小米 17 Pro Max","width":976,"height":596,"modelIds":["2509FPN0BC"],"deviceTested":true,"cameraReserve":0.35,"source":"当前实机；测试基线 OS4.0.0.44.XPBCNXM 与背屏 RELEASE-1.0.2608211912"},
+  {"id":"18-pro","name":"小米 18 Pro","width":912,"height":596,"modelIds":[],"deviceTested":false,"cameraReserve":0.35,"source":"用户提供的预适配目标；分辨率、镜头孔位与接入待实测"},
+  {"id":"18-pro-max","name":"小米 18 Pro Max","width":976,"height":596,"modelIds":[],"deviceTested":false,"cameraReserve":0.35,"source":"用户提供的预适配目标；镜头孔位与接入待实测"}
+]

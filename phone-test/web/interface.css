@@ -1,0 +1,48 @@
+:root{--ui-accent:#79b5ff;--ui-text:#f5f5f7;--ui-secondary:#b8bac4;--ui-cell:#ffffff0c;--ui-line:#ffffff12}
+body,button,input{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+#panel,#bands-panel{width:min(390px,calc(100vw - var(--pet-camera-left,35vw) - var(--pet-edge,5vw)*2));top:max(18px,5vh);max-height:calc(100vh - max(18px,5vh)*2);z-index:4;padding:20px 28px;border-radius:28px;border:1px solid #ffffff35;background:linear-gradient(145deg,#343640c9,#1c1d24dc);backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 12px 32px #0005;color:var(--ui-text);font-size:17px;line-height:1.4;scrollbar-width:thin;transition:opacity .24s ease}
+.panel-intro{font-size:28px;font-weight:650;letter-spacing:-.5px;margin:2px 0}.panel-intro span{display:block;margin-top:3px;font-size:13px;font-weight:400;color:var(--ui-secondary);letter-spacing:0}
+body[data-pet-settings-page]:not([data-pet-settings-page="home"]) .panel-intro{display:none}
+#panel #settings-home{display:block;margin:0 0 18px;padding:0;overflow:hidden;border-radius:16px;background:var(--ui-cell)}
+#panel #settings-home button{display:block;position:relative;width:100%;margin:0;padding:15px 30px 15px 16px;border:0;border-bottom:1px solid var(--ui-line);border-radius:0;background:transparent;min-height:54px;text-align:left}
+#settings-home button:last-child{border-bottom:0!important}#settings-home button::after{content:"›";position:absolute;right:14px;color:#8b8c96;font-size:22px;top:12px}
+#settings-heading{position:sticky;top:-20px;z-index:1;margin:-2px -8px 18px;padding:10px 8px;background:#282a32f5;border-bottom:1px solid var(--ui-line);gap:8px}#settings-title{font-size:19px;font-weight:600}
+#panel #settings-back{min-width:56px;min-height:44px;padding:6px 8px;border:0;background:transparent;color:var(--ui-accent)}#settings-back::before{content:"‹ ";font-size:22px}
+#panel button,#bands-panel button,#background-controls button{min-height:48px;padding:12px 14px;font:inherit;color:var(--ui-text);border:1px solid var(--ui-line);border-radius:14px;background:var(--ui-cell);box-shadow:none}
+#panel button:active,#bands-panel button:active{background:#ffffff21}
+#panel button[aria-pressed="true"],#bands-panel button[aria-pressed="true"]{background:#79b5ff20;border-color:#79b5ff50;color:#a9ceff}
+#panel button:disabled{opacity:.42}
+#panel .model-label{margin:20px 0 5px;color:var(--ui-secondary);font-size:14px}#panel .model-label span{color:var(--ui-text);font-variant-numeric:tabular-nums}
+#panel input[type="range"]{height:48px;accent-color:var(--ui-accent)}#panel input[type="text"],#hex{background:#11121766;border:1px solid #ffffff1a;border-radius:12px;color:var(--ui-text);font:inherit}
+#voice-note-edit{box-sizing:border-box;width:100%;padding:12px;margin:8px 0;touch-action:auto}
+#panel canvas{border-radius:12px;margin:14px 0}#panel #hue{border-radius:10px}
+#panel #close,#bands-panel #bands-close{background:#447dbb55!important;border-color:#8bc0ff50;color:#d9ebff;font-weight:600;margin-top:16px;min-height:48px}
+#saved,.setting-note,#background-note{font-size:13px;line-height:1.6;color:var(--ui-secondary)}#saved{margin:16px 2px 0}
+#bands-button,#settings{background:linear-gradient(145deg,#5a5b6866,#272832b3);border:1px solid #ffffff33;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 4px 14px #0003}
+.badge{background:linear-gradient(135deg,#ffffff22,#ffffff08);backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 3px 10px #0003}
+body[data-pet-panel-open="true"] #bands-button,body[data-pet-panel-open="true"] #settings{visibility:hidden}
+#status{font-family:inherit;color:#a8a9b3;font-variant-numeric:tabular-nums}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+#settings-heading{border:1px solid var(--ui-line);border-radius:18px;top:0;margin:0 0 18px;padding:8px}
+#appearance-controls button{display:block;width:100%;box-sizing:border-box;margin:10px 0;text-align:left}
+body[data-pet-settings-page="character"][data-pet-adjusting="true"] #panel{opacity:.38}
+body[data-pet-theme="light"]{--ui-accent:#1763bc;--ui-text:#202127;--ui-secondary:#626570;--ui-cell:#00000005;--ui-line:#00000012}
+body[data-pet-theme="light"] #panel,body[data-pet-theme="light"] #bands-panel{background:linear-gradient(145deg,#ffffffc9,#eef0f6dc);border-color:#ffffffb3;scrollbar-color:#0004 transparent}
+body[data-pet-theme="light"] #settings-heading{background:#f0f1f6ed}
+body[data-pet-theme="light"] #panel button:active,body[data-pet-theme="light"] #bands-panel button:active{background:#00000010}
+body[data-pet-theme="light"] #panel button[aria-pressed="true"]{background:#1763bc12;border-color:#1763bc40;color:#13569f}
+body[data-pet-theme="light"] #panel input[type="text"],body[data-pet-theme="light"] #hex{background:#ffffffb3;border-color:#00000018;color:var(--ui-text)}
+body[data-pet-theme="light"] #panel #close,body[data-pet-theme="light"] #bands-panel #bands-close{background:#2670be18!important;border-color:#2670be40;color:#175da6}
+body[data-pet-theme="light"] #bands-button,body[data-pet-theme="light"] #settings{background:linear-gradient(145deg,#ffffffe0,#e9edf3d9);color:#282a31;border-color:#ffffffb3}
+#panel-navigation{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:8px;align-items:start;position:sticky;top:0;z-index:2;margin-bottom:18px}
+#panel-navigation #settings-heading{position:static;margin:0;min-width:0;gap:4px}
+#panel-navigation #settings-title{font-size:17px;overflow-wrap:anywhere}
+#panel #panel-dismiss{width:44px;height:44px;min-height:44px;padding:0;border-radius:50%;font-size:27px;line-height:1}
+@media(prefers-reduced-motion:reduce){#panel,#bands-panel{transition:none}}
+#runtime-recovery{position:absolute;z-index:10;left:38%;right:5%;top:20%;padding:20px;border-radius:20px;border:1px solid #ffffff30;background:#20222aef;color:#f5f5f7;font:18px/1.6 sans-serif;white-space:pre-line}
+#runtime-recovery button{display:block;margin-top:16px;min-height:48px;padding:12px 18px;color:#d9ebff;background:#447dbb55;border-radius:14px}
+
+#gesture-controls button{display:block;width:100%;box-sizing:border-box;margin:10px 0;text-align:left}
+
+#bands-list .band-logo-button{display:flex;align-items:center;justify-content:center;min-height:78px;padding:10px 18px;background:linear-gradient(135deg,#fffffff0,#e5eaf2eb);border-color:#ffffff50}
+.band-logo-button img{display:block;max-width:100%;width:auto;height:auto;max-height:54px;object-fit:contain;pointer-events:none}

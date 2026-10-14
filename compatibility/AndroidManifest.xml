@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.anon.companion" android:versionCode="14" android:versionName="0.14">
+  <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="35" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+  <queries>
+    <package android:name="com.xiaomi.subscreencenter" />
+    <package android:name="com.android.thememanager" />
+  </queries>
+  <application android:name=".DiagnosticApplication" android:label="BanG Dream背屏桌宠助手" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false">
+    
+    <activity android:name=".DiagnosticActivity" android:exported="false" />
+    <provider android:name=".DiagnosticProvider" android:authorities="org.anon.companion.diagnostics" android:exported="false" android:grantUriPermissions="true" />
+    <receiver android:name=".DiagnosticReceiver" android:exported="true" />
+    <receiver android:name=".DiagnosticInternalReceiver" android:exported="false" />
+    <activity android:name=".GestureActivity" android:exported="false" />
+    <service android:name=".GestureService" android:exported="false" android:process=":gesture" android:foregroundServiceType="camera" />
+    <receiver android:name=".RuntimeReceiver" android:exported="true">
+      <intent-filter><action android:name="org.anon.companion.RUNTIME_REQUEST" /></intent-filter>
+    </receiver>
+    <activity android:name=".MainActivity" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

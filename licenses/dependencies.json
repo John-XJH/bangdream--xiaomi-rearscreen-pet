@@ -1,0 +1,249 @@
+[
+  {
+    "group": "com.google.mediapipe",
+    "artifact": "tasks-vision",
+    "version": "1.1.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "androidx.annotation",
+    "artifact": "annotation",
+    "version": "1.1.0",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.guava",
+    "artifact": "guava",
+    "version": "27.0.1-android",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.guava",
+    "artifact": "failureaccess",
+    "version": "1.0.1",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.guava",
+    "artifact": "listenablefuture",
+    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.code.findbugs",
+    "artifact": "jsr305",
+    "version": "3.0.2",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "org.checkerframework",
+    "artifact": "checker-compat-qual",
+    "version": "2.5.2",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "GNU General Public License, version 2 (GPL2), with the classpath exception",
+        "url": "http://www.gnu.org/software/classpath/license.html"
+      },
+      {
+        "name": "The MIT License",
+        "url": "http://opensource.org/licenses/MIT"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.errorprone",
+    "artifact": "error_prone_annotations",
+    "version": "2.2.0",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.j2objc",
+    "artifact": "j2objc-annotations",
+    "version": "1.1",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "org.codehaus.mojo",
+    "artifact": "animal-sniffer-annotations",
+    "version": "1.17",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.mediapipe",
+    "artifact": "tasks-core",
+    "version": "1.1.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.flogger",
+    "artifact": "flogger",
+    "version": "0.6",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.flogger",
+    "artifact": "flogger-system-backend",
+    "version": "0.6",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.protobuf",
+    "artifact": "protobuf-javalite",
+    "version": "4.26.1",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.android.datatransport",
+    "artifact": "transport-api",
+    "version": "3.0.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.android.datatransport",
+    "artifact": "transport-backend-cct",
+    "version": "3.1.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.android.datatransport",
+    "artifact": "transport-runtime",
+    "version": "3.1.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.firebase",
+    "artifact": "firebase-encoders",
+    "version": "17.0.0",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "com.google.firebase",
+    "artifact": "firebase-encoders-proto",
+    "version": "16.0.0",
+    "kind": "jar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "group": "javax.inject",
+    "artifact": "javax.inject",
+    "version": "1",
+    "kind": "jar",
+    "declaredLicenses": [],
+    "note": "POM无本级许可声明时需检查父POM或JAR内许可"
+  },
+  {
+    "group": "com.google.firebase",
+    "artifact": "firebase-encoders-json",
+    "version": "18.0.0",
+    "kind": "aar",
+    "declaredLicenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "note": ""
+  }
+]
